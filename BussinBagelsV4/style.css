@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  background-color: #242424;
+  color: #e6a330;
+}
+
+header {
+  background-image: url('images/BagellBanner2.jpg');
+  background-color: #333232;
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+h1 {
+  color: #e6a330;
+  text-align: center;
+  margin: 0;
+}
+
+.bagel-logo {
+  width: 50px;
+}
+
+nav {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.nav-link {
+  flex: 1;
+  color: black;
+  background-color: #e6a330;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-right: 1px solid black;
+  padding: 0.5em;
+  transition: all 2000ms ease-out;
+}
+
+.nav-link:last-child {
+  border-right: none;
+}
+
+.nav-link:hover {
+  background-color: #242424;
+  color: aliceblue;
+}
+
+/* START 2 COLUMN */
+
+#row1 {
+  display: flex;
+  width: 100%;
+}
+
+.text-container1 {
+  color: #242424;
+  background-color: white;
+  width: 50%;
+  padding: 2em;
+}
+
+.image-container1 {
+  background-color: #242424;
+  background-image: linear-gradient(to right, white, #e6a330);
+  width: 50%;
+}
+
+.image-container1 img {
+  float: right;
+  width: 50%;
+  margin: 1.5em;
+}
+
+#row2 {
+  display: flex;
+  width: 100%;
+}
+
+.text-container2 {
+  color: #242424;
+  background-color: white;
+  width: 50%;
+  padding: 2em;
+}
+
+.text-container2 ul {
+  margin: .5em;
+}
+
+.image-container2 {
+  background-color: #242424;
+  background-image: linear-gradient(to left, white, #e6a330);
+  width: 50%;
+}
+
+.image-container2 img {
+  float: left;
+  width: 300px;
+  margin: 1.5em;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+/* START FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6a330;
+  font-style: italic;
+  border-top: 1px solid black;
+}
+
+footer p {
+  color: black;
+  padding: .25em;
+}
+
+footer a {
+  padding-bottom: .25em;
+}
+
+/* MENU */
+
+main > p {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+table {
+  width:  80%;
+  margin: auto;
+}
+
+th, td {
+  padding: .75em
+}
+
+th {
+  background-color: #e6a330;
+  color: #242424;
+  font-size: 1.5em;
+}
+
+td {
+  background-color: aliceblue;
+  color: #242424;
+  font-size: 1.25em;
+}
+
+tr:nth-of-type(even) {
+  background-color: white;
+}
+
+.all-bagels {
+  display: block;
+  width: fit-content;
+  color: white;
+  padding: 1em;
+  margin: auto;
+}
+
+.all-bagels:hover {
+  text-decoration: none;
+}
+
+/* ORDER */ 
+
+h3 {
+  padding-top: 1.5em;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+form {
+  width: 50%;
+  background-color: aliceblue;
+  color: #242424;
+  box-shadow: 0 0 5px 5px #111111;
+  margin: 3em auto;
+}
+
+form p {
+  padding: 1em;
+  font-weight: 600;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal input {
+  width: 75%;
+  padding: .75em;
+  margin: 0 1em 1em 1em;
+}
+
+#email {
+  margin-bottom: 0;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  margin-left: 1em;
+}
+
+input[type="checkbox"] {
+  margin-left: .75em;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  background-color: #e6a330;
+  color: #111111;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: .5em .75em;
+  cursor: pointer;
+}

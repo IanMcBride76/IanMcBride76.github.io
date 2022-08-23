@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Bussin Bagels</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/BagelLogo.png" alt="Bussin Bagels' bagel logo" class="bagel-logo">
+      <h1>Bussin Bagels</h1>
+      <img src="images/BagelLogo.png" alt="Bussin Bagels' bagel logo" class="bagel-logo">
+    </header>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="order.html" class="nav-link">Order</a>
+    </nav>
+    <main>
+      <h3>Guaranteed to love them or your money back!</h3>
+      <form action="https://webdevbasics.net/scripts/demo.php" method="post" id="order-form">
+        <div class="personal">
+          <p>First, your personal info</p>
+          <input type="text" name="fname" id="fname" placeholder="First Name">
+          <input type="text" name="lname" id="lname" placeholder="Last Name">
+          <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div id="selection">
+          <p>Now select your bagels</p>
+          <div class="item-container">
+            <label for="CinnRaisin">Cinnamon Raisin (6)</label>
+            <input type="checkbox" name="CinnRaisin" id="CinnRaisin">
+          </div>
+          <div class="item-container">
+            <label for="PSpice">Pumpkin Spice (6)</label>
+            <input type="checkbox" name="PSpice" id="PSpice">
+          </div>
+          <div class="item-container">
+            <label for="Blueberry">Blueberry (6)</label>
+            <input type="checkbox" name="Blueberry" id="Blueberry">
+          </div>
+          <div class="item-container">
+            <label for="Everything">Everything (6)</label>
+            <input type="checkbox" name="Everything" id="Everything">
+          </div>
+        </div>
+        <div class="item-container submit-container">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2022, Bussin Bagels Inc.</p>
+      <a href="mailto:bussinbagels@gmail.com">bussinbagels@fakeemail.com</a>
+    </footer>
+  </body>
+</html>
